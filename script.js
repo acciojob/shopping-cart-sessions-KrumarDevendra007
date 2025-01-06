@@ -29,7 +29,7 @@ function renderCart() {
   cart.forEach((item) => {
     const li = document.createElement("li");
     li.innerHTML = `${item.name} - $${item.price} <button class="remove-from-cart-btn" data-id="${item.id}">Remove</button>`;
-    productList.appendChild(li);
+    cartList.appendChild(li);
   });
 }
 
