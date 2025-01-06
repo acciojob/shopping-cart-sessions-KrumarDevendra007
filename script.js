@@ -12,7 +12,7 @@ const clearCartBtn = document.getElementById("clear-cart-btn");
 
 // Retrieve cart from session storage
 let cart = JSON.parse(sessionStorage.getItem("shoppingCart")) || [];
-
+const productList = document.getElementById("product-list");
 // Render product list
 function renderProducts() {
   products.forEach((product) => {
